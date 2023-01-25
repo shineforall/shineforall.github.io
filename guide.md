@@ -4,6 +4,14 @@ permalink: /guide/
 ---
 # 컨텐츠등록 가이드
 
+## 컨텐츠 추가 방법 3가지
+    1. jekyll을 자신의 컴퓨터에 설치하여 로컬에서 문서 추가 및 수정 후 로컬 사이트 에서 확인 후 github에 push하여 github페이지에서 확인
+    2. jekyll설치 안하고 로컬에서 문서 추가 및 수정 후 github에 push하여 github페이지에서 확인
+    3. github 웹사이트에서 문서 추가 및 수정 후 github페이지에서 확인
+
+* github에 파일을 추가하거나 수정하면 github에서 jekyll 빌드하는 시간이 1분 정도 걸립니다. 빌드 상태는 github 해당 repository - Actions 탭에서 확인 가능합니다.
+
+
 ## 컨텐츠 분류
 해당 사이트 내에 글을 작성할 수 있는 곳은
 ```m
