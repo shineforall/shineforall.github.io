@@ -28,7 +28,7 @@ permalink: /guide/
 연구성과 영문 : /collections/_results_eng
 SHINE 데이터 국문 : /collections/_shineData
 SHINE 데이터 영문 : /collections/_shineData_eng
-언론보도 국문, 영문 : /collections/_posts
+언론보도 국문 : /collections/_posts
 언론보도 영문 : /collections/_posts_eng
 ```
 * 국문과 영문 폴더가 분리되어 있는 이유는 언론보도 국문에서 리스트 페이징 기능을 사용하기 위함입니다.
