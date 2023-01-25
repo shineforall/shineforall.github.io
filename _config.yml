@@ -1,0 +1,158 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: SHINE
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+logo : "/assets/images/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+subtitle : "" # site tagline that appears below site title in masthead
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings for local
+#theme: minimal-mistakes-jekyll
+# for github
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+minimal_mistakes_skin: default
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-paginate
+# only work in github.io
+# - jekyll-remote-theme
+
+
+whitelist:
+  - jekyll_plugins
+  - jekyll-tagging
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+head_scripts:
+  - https://code.jquery.com/jquery-3.2.1.min.js
+  - https://cdn.jsdelivr.net/npm/chart.js
+  # - /assets/js/plugins/jquery.csv.min.js
+  # - /assets/js/csv_to_html_table.js  
+
+
+# teaser: /assets/images/notice_contents.png
+
+collections_dir: collections
+collections:
+  results:
+    output: true
+    search: false
+  results_eng:
+    output: true
+    search: false    
+  shineData:
+    output: true
+    search: false
+  shineData_eng:
+    output: true
+    search: false    
+  posts_eng:
+    output: true
+    search: false    
+
+locale: "ko"
+name: "SHINE"
+
+paginate: 6 # amount of posts to show
+paginate_path: "/media/page:num/"
+
+defaults:
+  # -
+  #   scope:
+  #     path: ""
+  #     type: ""
+  #   values:
+  #     title: 언론보도1
+  #     layout: imageNews
+  #     categories: media
+  #     read_time: true
+  #     # comments: true
+  #     # share: true
+  #     # related: true
+  #     output: true
+  #     # permalink: /media/
+  #     header:
+  #         overlay_image: /assets/images/bg_sub.jpg      
+  #     # header:
+  #     #   overlay_image: /assets/images/bg_sub.jpg
+
+  - scope:
+      path: ""
+      type: posts_eng
+    values:
+      layout: single_eng
+      categories: analysis eng
+      header:
+        overlay_image: /assets/images/bg2.jpg
+      tag: Data Analysis
+
+  - scope:
+      path: ""
+      type: "shineData"
+    values:
+      layout: single
+      categories: analysis
+      header:
+        overlay_image: /assets/images/bg_sub.jpg
+      tag : "SHINE 데이터"
+
+  - scope:
+      path: ""
+      type: "shineData_eng"
+    values:
+      layout: single_eng
+      categories: analysis eng
+      header:
+        overlay_image: /assets/images/bg_sub.jpg
+      tag: Data
+
+# truncateTitleLength: 23
+# truncateContentLength: 35
+# truncateTitleEngLength: 40
+# truncateContentEngLength: 55

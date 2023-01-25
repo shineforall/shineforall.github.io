@@ -1,7 +1,9 @@
 ---
-layout: main
+permalink: /eng/
+layout: main_eng
 header:
-    overlay_image: /assets/images/mainBg2.jpg
+  overlay_image: /assets/images/mainBg2_eng.jpg
+<!-- image: /assets/images/notice_contents.png -->
 ---
 <!-- {% include figure image_path="https://shineforall.org/wp-content/uploads/2022/01/footer_bgimg.png" alt="this is a placeholder image" caption="" %} -->
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
@@ -22,15 +24,15 @@ header:
             <div class="mainListSub">
               <section>
                 <figure><img src="/assets/images/img_main_1.jpg" alt=""></figure>
-                <p>신종 감염병 대응을 위한 보건 정보 연구인 SHINE을 소개 합니다.</p>
-                <a href="/about/">SHINE 연구 자세히 보기</a>
+                <p>Introducing SHINE(Study of Health Information for Next Epidemic) Research. </p>
+                <a href="/eng/about/">Get more information</a>
               </section>
             </div>
             <div class="mainListSub">
               <section>
                 <figure><img src="/assets/images/img_main_2.jpg" alt=""></figure>
-                <p>SHINE 연구를 통해 모인 데이터와 연구 성과를 확인해 보세요.</p>
-                <a href="/results/">SHINE 연구성과 자세히 보기</a>
+                <p>Exploring the data and results  from SHINE Research.</p>
+                <a href="/eng/results/">Get more information</a>
               </section>
             </div>
         </div>
@@ -38,30 +40,3 @@ header:
     </article>
   </div>
 </div>
-
-<!-- Scroll Back To Top Button start -->
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<script>
-  // Get the button:
-let mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    //mybutton.style.display = "block";
-    mybutton.style.opacity = 0.7
-  } else {
-    //mybutton.style.display = "none";
-    mybutton.style.opacity = 0
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-</script>
-<!-- Scroll Back To Top Button End -->

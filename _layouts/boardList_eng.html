@@ -1,0 +1,44 @@
+---
+layout: splash_eng
+---
+
+{{ content }}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% assign entries = site[page.collection] %}
+
+  {% if page.sort_by %}
+    {% assign entries = entries | sort: page.sort_by %}
+  {% endif %}
+
+  {% if page.sort_order == 'reverse' %}
+    {% assign entries = entries | reverse %}
+  {% endif %}
+  <ul>
+  {%- for post in entries -%}
+    {%- unless post.hidden -%}
+      <li>
+        <a href="{{post.sourceUrl}}" target="_blank">
+          <div class="flexBox">
+            <article class="postTit">
+              <span class="title">{{post.title}}.</span>
+              <span class="desc">{{post.subTitle}}</span>
+            </article>
+            <article class="postInfo">
+              <span>date : '{{ post.date | date: "%y.%m.%d" }}</span>
+              {% if post.institution %}
+                <span>institution : {{post.institution}} </span>
+              {% endif %}
+              {% if post.journal %}
+                <span>journal : {{post.journal}}</span>
+              {% endif %}              
+            </article>
+
+          </div>
+        </a>
+      </li>
+    {%- endunless -%}
+  {%- endfor -%}
+  </ul>
+</div>

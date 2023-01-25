@@ -1,0 +1,53 @@
+---
+layout: splash
+---
+<style>
+.mouse_default{
+  cursor: default;
+}
+</style>
+{{ content }}
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  <div class="imageNewsContainer">
+  <!-- {% assign entries = site[page.collection] | where_exp: "page", "page.language == None"%} -->
+  {% assign entries = paginator.posts %}
+  {% for post in entries reversed %}
+    <div class="subContainer">
+      <a href="{{ post.sourceUrl }}" target="_blink">
+        <figure><img src="{{post.sourceImgUrl | relative_url}}"></figure>
+        <div class="imageContext">
+          <div class="title">{{ post.title }}</div>
+          <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+          <span class="date">{{ post.date | date: "%Y.%m.%d" }}</span>
+        </div>
+      </a>
+    </div>  
+  {% endfor %}
+  </div>
+</div>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+  <button onclick = "location.href='{{ paginator.previous_page_path | relative_url  }}'" class="prev">이전</button>
+  {% else %}
+    <button class="prev mouse_default">이전</button>
+  {% endif %}
+
+  {% for pageNum in (1..paginator.total_pages) %}
+    {% if pageNum == paginator.page %}
+      <a href="javascript:none;" class="current">{{ pageNum }}</a>
+    {% elsif pageNum == 1 %}
+      <a href="{{ page.collection  | relative_url}}">{{ pageNum }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | relative_url | replace: ':num', pageNum }}">{{ pageNum }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+  <button onclick = "location.href='{{ paginator.next_page_path | relative_url  }}'" class="next">
+  {% else %}
+    <button class="next mouse_default">다음</button>
+  {% endif %}
+</div>

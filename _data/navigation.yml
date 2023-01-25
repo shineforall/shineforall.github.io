@@ -1,0 +1,58 @@
+
+# main links
+main:
+  - title: "연구소개"
+    url: /about/
+  - title: "연구기관"
+    url: /research/
+  - title: "연구 성과"
+    url: /results/
+#  - title: "데이터 분석"
+#    url: /analysis/
+  - title: "SHINE 데이터"
+    url: /analysis/
+  - title: "언론보도"
+    url: /media/
+  # - title: "ENG"
+  #   url: /eng/    
+  # - title: "검색"
+  #   url: /search/
+
+
+main_eng:
+  - title: "About"
+    url: /eng/about/
+  - title: "Members"
+    url: /eng/research/
+  - title: "Results"
+    url: /eng/results/
+#  - title: "Data Analysis"
+#    url: /eng/analysis/
+  - title: "Data"
+    url: /eng/analysis/
+  - title: "Press Release"
+    url: /eng/media/
+  # - title: "KOR"
+  #   url: /
+  # - title: "검색"
+  #   url: /search/
+
+foo:
+  - title: "Parent Link 1"
+    url: /parent-1-page-url/
+    children:
+      - title: "Child Link 1"
+        url: /child-1-page-url/
+      - title: "Child Link 2"
+        url: /child-2-page-url/
+
+  - title: "Parent Link 2"
+    url: /parent-2-page-url/
+    children:
+      - title: "Child Link 1"
+        url: /child-1-page-url/
+      - title: "Child Link 2"
+        url: /child-2-page-url/
+      - title: "Child Link 3"
+        url: /child-3-page-url/
+

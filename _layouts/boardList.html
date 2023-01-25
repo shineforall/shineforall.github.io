@@ -1,0 +1,44 @@
+---
+layout: splash
+---
+
+{{ content }}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% assign entries = site[page.collection] %}
+
+  {% if page.sort_by %}
+    {% assign entries = entries | where_exp: "page", "page.language == None" | sort: page.sort_by %}
+  {% endif %}
+
+  {% if page.sort_order == 'reverse' %}
+    {% assign entries = entries | where_exp: "page", "page.language == None" | reverse %}
+  {% endif %}
+  <ul>
+  {%- for post in entries -%}
+    {%- unless post.hidden -%}
+      <li>
+        <a href="{{post.sourceUrl}}" target="_blank">
+          <div class="flexBox">
+            <article class="postTit">
+              <span class="title">{{post.title}}.</span>
+              <span class="desc">{{post.subTitle}}</span>
+            </article>
+            <article class="postInfo">
+              <span>게재 날짜 : '{{ post.date | date: "%y.%m.%d" }}</span>
+              {% if post.institution %}
+                <span>기관 : {{post.institution}} </span>
+              {% endif %}
+              {% if post.journal %}
+                <span>학술지 : {{post.journal}}</span>
+              {% endif %}
+            </article>
+
+          </div>
+        </a>
+      </li>
+    {%- endunless -%}
+  {%- endfor -%}
+  </ul>
+</div>

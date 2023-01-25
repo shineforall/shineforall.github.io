@@ -1,0 +1,22 @@
+---
+layout: splash_eng
+---
+{{ content }}
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  <div class="imageNewsContainer">
+  {% assign entries = site[page.collection] %}
+  {% for post in entries reversed %}
+    <div class="subContainer">
+      <a href="{{ post.sourceUrl }}" target="_blink">
+        <figure><img src="{{post.sourceImgUrl | relative_url}}"></figure>
+        <div class="imageContext">
+          <div class="title">{{ post.title }}</div>
+          <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+          <span class="date">{{ post.date | date: "%Y.%m.%d" }}</span>
+        </div>
+      </a>
+    </div>  
+  {% endfor %}
+  </div>
+</div>
