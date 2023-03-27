@@ -2,7 +2,7 @@
 title:  코로나19 셀프체크 데이터
 
 header:
-  teaser: /assets/images/postvac_title.png # 리스트 페이지 썸네일 이미지 주소
+  teaser: /assets/images/selfcheck_title.png # 리스트 페이지 썸네일 이미지 주소
 
 ##### 목차 설정 #####
 toc: false # 페이지내 목차를 사용할지 안할지 설정 true|false
