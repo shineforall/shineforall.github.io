@@ -15,31 +15,29 @@ toc_sticky: false  # 목차가 페이지를 따라다니게 함 true|false
 This is the self-check data for COVID-19 collected from the SHINE mobile app. It includes information entered by SHINE app users during self-checks, as well as COVID-19 PCR test results and records of COVID-19 vaccination. This is the data that has been anonymized from the collected data.
 
 
-## 특징
+#### Features
 
 * There was no limit to the number of times you can use self-check and PCR test results records in the mobile app. Therefore, each user may have multiple self-check data sets, and the data published includes the input data from the self-check date closest to the PCR test date within 7 days before and after the PCR test.
 * Although all data entered into SHINE is based on users' voluntary records, the PCR test and vaccination records are verified with supporting documents.
 
 
-## 컬럼 정
+#### Information for variables
 
-12,656행과 22개의 컬럼을 갖고 있으며, 컬럼은 아래 5개 유형의 정보를 담고 있습니다.
+It has 12,656 rows and 21 columns, and the columns contain information of the following five types.
 
+1\. User Information
 
-1\. 유저 정보
-
-| 컬럼명 | 설명 | 예시 |
+| Column Name | Description | Example |
 |-------|-----|-----|
-| age_group | 연령대 | 30 |
-| gender | 성별 | 남 |
+| age_group | Age group | 30 |
+| gender | Gender | Male |
 
+2\. Health status Information
 
-2\. 건강상태 정보
-
-| 컬럼명 | 설명 | 예시 |
+| Column Name | Description | Example |
 |-------|-----|-----|
-| underlying_disease | 기저질환 보유 여부 | 있음 |
-| smoking | 흡연 여부 | 비흡연 |
+| underlying_disease | Presence of underlying disease | Yes |
+| smoking | Smoking status | 비흡연 |
 
 
 3\. 코로나19 검사 정보
@@ -79,9 +77,9 @@ This is the self-check data for COVID-19 collected from the SHINE mobile app. It
 | selfcheck_reason | 셀프체크 실행 사유 | 1`5 |
 
 
-## 데이터 기초 정보
+#### Basic Information of the Data
 
-### 유저 정보
+##### User Information
 
 1\. 성별 분포
 
