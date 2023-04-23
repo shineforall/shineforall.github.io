@@ -12,7 +12,7 @@ toc_sticky: false  # 목차가 페이지를 따라다니게 함 true|false
 ##### 목차 설정 #####
 ---
 
-_**All data is based on voluntary records from SHINE app users and does not guarantee accuracy; responsibility for the use of this data lies with the user.**_
+### _All data is based on voluntary records from SHINE app users and does not guarantee accuracy; responsibility for the use of this data lies with the user._
 
 
 #### Features
