@@ -1,5 +1,5 @@
 ---
-title:  COVID-19 self-check data
+title:  COVID-19 Self-check Data
 
 header:
   teaser: /assets/images/selfcheck_title.png # 리스트 페이지 썸네일 이미지 주소
@@ -12,13 +12,13 @@ toc_sticky: false  # 목차가 페이지를 따라다니게 함 true|false
 ##### 목차 설정 #####
 ---
 
-This is the self-check data for COVID-19 collected from the SHINE mobile app. It includes information entered by SHINE app users during self-checks, as well as COVID-19 PCR test results and records of COVID-19 vaccination. This is the data that has been anonymized from the collected data.
+_**All data is based on voluntary records from SHINE app users and does not guarantee accuracy; responsibility for the use of this data lies with the user.**_
 
 
 #### Features
 
+* This is the self-check data for COVID-19 collected from the SHINE mobile app. It includes information entered by SHINE app users during self-checks, as well as COVID-19 PCR test results and records of COVID-19 vaccination. This is the data that has been anonymized from the collected data.
 * There was no limit to the number of times you can use self-check and PCR test results records in the mobile app. Therefore, each user may have multiple self-check data sets, and the data published includes the input data from the self-check date closest to the PCR test date within 7 days before and after the PCR test.
-* Although all data entered into SHINE is based on users' voluntary records, the PCR test and vaccination records are verified with supporting documents.
 
 
 #### Information for variables
@@ -30,197 +30,215 @@ It has 12,656 rows and 21 columns, and the columns contain information of the fo
 | Column Name | Description | Example |
 |-------|-----|-----|
 | age_group | Age group | 30 |
-| gender | Gender | Male |
+| gender | Gender | M |
 
 2\. Health status Information
 
 | Column Name | Description | Example |
 |-------|-----|-----|
-| underlying_disease | Presence of underlying disease | Yes |
-| smoking | Smoking status | 비흡연 |
+| underlying_disease | Presence of underlying disease | Y |
+| smoking | Smoking status | N |
 
+3\. covid-19 Test Information
 
-3\. 코로나19 검사 정보
-
-| 컬럼명 | 설명 | 예시 |
+| Column Name | Description | Example |
 |-------|-----|-----|
-| pcr_date | 코로나19 PCR 검사일 | 2022-03-02 |
-| pcr_result | 코로나19 PCR 검사결과 | 양성 |
+| pcr_date | COVID-19 PCR Test Date | 2022-03-02 |
+| pcr_result | COVID-19 PCR Test Result | P |
 
+4\. Vaccination Information
 
-4\. 백신접종 정보
-
-| 컬럼명 | 설명 | 예시 |
+| Column Name | Description | Example |
 |-------|-----|-----|
-| dose_1_date | 1차 접종일 | 2021-01-21 |
-| dose_1_type | 1차 접종 백신종류 | AZ |
-| dose_2_date | 2차 접종일 | 2021-02-22 |
-| dose_2_type | 2차 접종 백신종류 | 화이자 |
-| dose_3_date | 3차 접종일 | 2021-03-23 |
-| dose_3_type | 3차 접종 백신종류 | 얀센 |
-| dose_4_date | 4차 접종일 | 2021-04-24 |
-| dose_4_type | 4차 접종 백신종류 | 모더나 |
+| dose_1_date | First dose date | 2021-01-21 |
+| dose_1_type | First dose vaccine type | AZ |
+| dose_2_date | Second dose date | 2021-02-22 |
+| dose_2_type | Second dose vaccine type | Pfizer |
+| dose_3_date | Third dose date | 2021-03-23 |
+| dose_3_type | Third dose vaccine type | Janssen |
+| dose_4_date | Fourth dose date | 2021-04-24 |
+| dose_4_type | Fourth dose vaccine type | Moderna |
 
-\* 미입력한 정보는 - 로 처리되어 있습니다.
+Unentered information by the user is marked with a dash (-).
 
+5\. Symptom Information
 
-5\. 증상 정보
-
-| 컬럼명 | 설명 | 예시 |
+| Column Name | Description | Example |
 |-------|-----|-----|
-| selfcheck_date | 셀프체크 증상 입력일 | 2022-02-10 |
-| fever | 발열 여부 | 있음 |
-| fever_temp | 발열 온도 | 38 |
-| fever_period | 발열 지속기간 | 3일 |
-| symptom | 발생한 증상 종류 | 2`3 |
-| group_infection_area | 집단발생지역 방문여부 | 모름 |
-| selfcheck_reason | 셀프체크 실행 사유 | 1`5 |
+| selfcheck_date | Self check Date | 2022-02-10 |
+| fever | Fever status | Y |
+| fever_temp | Body temperature | 38 |
+| fever_period | Duration of Fever | 3D |
+| symptom | Type of symptoms occurred | 2`3 |
+| group_infection_area | Visit to outbreak area | V |
+| selfcheck_reason | Reason for Self-check | 1`5 |
 
 
 #### Basic Information of the Data
 
 ##### User Information
 
-1\. 성별 분포
+1\. Gender
 
 ![png](selfcheck_files/selfcheck_11_0.png)
 
+| Value | Description |
+|-------|-----|
+| M | Male |
+| F | Female |
 
-2\. 연령대 분포
+2\. Age group
 
 ![png](selfcheck_files/selfcheck_12_0.png)
 
-연령대는 숫자로만 표시되어 있습니다. 예를 들어, 20은 20~29세를 의미합니다.
-예외적으로 10은 14~19세이며, 70은 70세 이상의 모든 연령을 나타냅니다.
+Age groups are represented by numbers. For example, 20 means ages 20-29. The exception is that 10 represents ages 14-19 and 70 represents all ages 70 and over.
 
 
-### 건강상태 정보
+##### Underlying Disease Information
 
-1\. 기저질환 분포
+1\. Underlying Disease
 
 ![png](selfcheck_files/selfcheck_13_0.png)
 
-\* 기저질환: 당뇨, 고혈압, 만성심혈관질환, 만성뇌혈관질환, 신경근육계질환, 만성폐쇄성질환, 천식, 만성폐질환, 만성신장질환, 투석, 만성간질환, 암, 혈액암, 골수이식, 장기이식, 자가면역/류마티스질환, 면역억제제 투약
+| Value | Description |
+|-------|-----|
+| Y | Underlying disease present |
+| N | No underlying disease |
 
-2\. 흡엽여부 분포
+\* Underlying conditions: diabetes, hypertension, chronic cardiovascular disease, chronic cerebrovascular disease, neuromuscular disorders, chronic obstructive pulmonary disease, asthma, chronic lung disease, chronic kidney disease, dialysis, chronic liver disease, cancer, blood cancer, bone marrow transplant, organ transplant, autoimmune/rheumatic diseases, immunosuppressive drug administration.
+
+2\. Smoking
 
 ![png](selfcheck_files/selfcheck_20_0.png)
 
 
-### 코로나19 검사 정보
+### COVID-19 Test Information
 
-1\. PCR 검사결과 분포
+1\. PCR Test Result
 
 ![png](selfcheck_files/selfcheck_17_0.png)
 
-2\. 일별 검사결과 분포
+| Value | Description |
+|-------|-----|
+| P | Positive |
+| N | Negative |
+
+2\. PCR Test result by date
 
 ![png](selfcheck_files/selfcheck_18_1.png)
 
 
-### 백신접종 정보
+##### Vaccination Information
 
-1\. 차수별 분포
-
-![png](selfcheck_files/selfcheck_14_1.png)
-
-
-2\. 백신종류 분포
-
-![png](selfcheck_files/selfcheck_15_1.png)
-
-
-3\. 백신 접종일별 분포
+1\. Vaccination date
 
 ![png](selfcheck_files/selfcheck_16_1.png)
 
+2\. Vaccination by dose
 
-### 증상 정보
+![png](selfcheck_files/selfcheck_14_1.png)
 
-1\. 셀프체크 증상 입력일
+3\. Vaccine type
+
+![png](selfcheck_files/selfcheck_15_1.png)
+
+| Value | Description |
+|-------|-----|
+| Pfizer | Pfizer |
+| Moderna | Moderna |
+| AZ | AstraZeneca |
+| Novavax | Novavax |
+| Janssen | Janssen |
+
+##### Symptom Information
+
+1\. Self-check date
 
 ![png](selfcheck_files/selfcheck_19_0.png)
 
-2\. 발열 여부
+2\. Fever status
 
-| 값 | 설명 |
+| Value | Description |
 |-------|-----|
-| 0 | 없음 |
-| 1 | 있음 |
+| Y | Has fever |
+| N | No fever |
 
-3\. 발열 온도 분포
-
-| 값 | 설명 |
-|-------|-----|
-| 0 | 미입력 |
-| 수치값 | 입력 체온 |
+3\. Body Temperature
 
 ![png](selfcheck_files/selfcheck_22_1.png)
 
-\* 0(미입력)을 제외한 값의 분포
-\* 발열 온도는 이용자가 수기로 입력한 수치임
+\* Distribution of values excluding 0 (unanswered)
 
-
-4\. 발열 지속기간
-
-| 값 | 설명 |
+| Value | Description |
 |-------|-----|
-| 없음 | 발열 없음 |
-| 1일 | 발열 1일 지속|
-| 2일 | 발열 2일 지속|
-| 3일 | 발열 3일 지속|
-| 3일 | 발열 4일 지속|
+| 0 | Not entered |
+| Numeric value | body temperature |
+
+\* The fever temperature is a value manually entered by the user.
+
+4\. Duration of fever
+
+| Value | Description |
+|-------|-----|
+| N | Not entered |
+| 1D | 1 day |
+| 2D | 2 day |
+| 3D | 3 day |
+| 4D | 4 day |
 
 ![png](selfcheck_files/selfcheck_23_1.png)
 
+5\. Types of symptoms
 
-5\. 발생한 증상 종류
-
-| 값 | 설명 |
+| Value | Description |
 |-------|-----|
-| 0 | 없음 |
-| 1 | 가래 |
-| 2 | 가슴통증 |
-| 3 | 근육통 |
-| 4 | 눈 충혈 |
-| 5 | 늘어지고 피곤함 |
-| 6 | 두통 |
-| 7 | 마른 기침 |
-| 8 | 몸통발진 |
-| 9 | 미각소실 |
-| 10 | 변비 |
-| 11 | 설사 |
-| 12 | 숨참 |
-| 13 | 오한 |
-| 14 | 인후통(목통증) |
-| 15 | 입맛없음 |
-| 16 | 입술 주변 물집 |
-| 17 | 입술 파래짐 |
-| 18 | 재채기 |
-| 19 | 콧물 |
-| 20 | 피가 섞인 기침 |
-| 21 | 후각소실 |
-| 22 | 기타 |
+| 0 | No symptoms |
+| 1 | Cough |
+| 2 | Chest pain |
+| 3 | Muscle pain |
+| 4 | Eye redness |
+| 5 | Fatigue |
+| 6 | Headache |
+| 7 | Dry cough |
+| 8 | Body rash |
+| 9 | Loss of taste |
+| 10 | Constipation |
+| 11 | Diarrhea |
+| 12 | Shortness of breath |
+| 13 | Chills |
+| 14 | Sore throat |
+| 15 | Loss of appetite |
+| 16 | Blisters around the lips |
+| 17 | Lips turning blue |
+| 18 | Sneezing |
+| 19 | Runny nose |
+| 20 | Coughing up blood |
+| 21 | Loss of smell |
+| 22 | Other |
 
-\* 중복선택을 **\`** 로 구분
+Separated by **\`** for multiple selections.
 
-
-6\. 집단감염 발생지역 방문 여부
+6\. Whether visited outbreak area
 
 ![png](selfcheck_files/selfcheck_24_0.png)
 
-
-7\. 셀프체크 사유
-
-| 값 | 설명 |
+| Value | Description |
 |-------|-----|
-| 1 | 본인 판단 |
-| 2 | 자가격리 |
-| 3 | 자가격리 해제 전 |
-| 4 | 유증상자 |
-| 5 | 보건소 연락 및 재난문자 |
-| 6 | 해외입국자 |
-| 7 | 선제 검사 |
-| 8 | 확진자 접촉 |
-| 9 | 해외입국자 접촉 |
-| 10 | 집단감염 발생지역 방문 |
+| NV | Not visited |
+| V | Visited |
+| DK | Don't know |
+
+7\. Reason for Self-check
+
+| Value | Description |
+|-------|-----|
+| 1 | One's own judgment |
+| 2 | Self-quarantine |
+| 3 | Before self-quarantine release |
+| 4 | Symptomatic |
+| 5 | Contact with public health center or emergency alert message |
+| 6 | Overseas traveler |
+| 7 | Preemptive testing |
+| 8 | Close contact with a confirmed case |
+| 9 | Contact with a person who entered from overseas |
+| 10 | Visited area of outbreak |
