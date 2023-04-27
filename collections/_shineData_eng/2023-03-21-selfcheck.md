@@ -80,7 +80,7 @@ Unentered information by the user is marked with a dash (-).
 
 1\. Gender
 
-![png](selfcheck_files/selfcheck_11_0.png)
+![png](selfcheck_files/selfcheck_gender.png)
 
 | Value | Description |
 |-------|-----|
@@ -89,7 +89,7 @@ Unentered information by the user is marked with a dash (-).
 
 2\. Age group
 
-![png](selfcheck_files/selfcheck_12_0.png)
+![png](selfcheck_files/selfcheck_age.png)
 
 Age groups are represented by numbers. For example, 20 means ages 20-29. The exception is that 10 represents ages 14-19 and 70 represents all ages 70 and over.
 
@@ -98,7 +98,7 @@ Age groups are represented by numbers. For example, 20 means ages 20-29. The exc
 
 1\. Underlying Disease
 
-![png](selfcheck_files/selfcheck_13_0.png)
+![png](selfcheck_files/selfcheck_underlying_disease.png)
 
 | Value | Description |
 |-------|-----|
@@ -109,14 +109,14 @@ Age groups are represented by numbers. For example, 20 means ages 20-29. The exc
 
 2\. Smoking
 
-![png](selfcheck_files/selfcheck_20_0.png)
+![png](selfcheck_files/selfcheck_smoking.png)
 
 
 ### COVID-19 Test Information
 
 1\. PCR Test Result
 
-![png](selfcheck_files/selfcheck_17_0.png)
+![png](selfcheck_files/selfcheck_pcr_result.png)
 
 | Value | Description |
 |-------|-----|
@@ -125,22 +125,22 @@ Age groups are represented by numbers. For example, 20 means ages 20-29. The exc
 
 2\. PCR Test result by date
 
-![png](selfcheck_files/selfcheck_18_1.png)
+![png](selfcheck_files/selfcheck_pcr_date.png)
 
 
 ##### Vaccination Information
 
 1\. Vaccination date
 
-![png](selfcheck_files/selfcheck_16_1.png)
+![png](selfcheck_files/selfcheck_dose_date.png)
 
 2\. Vaccination by dose
 
-![png](selfcheck_files/selfcheck_14_1.png)
+![png](selfcheck_files/selfcheck_dose_num.png)
 
 3\. Vaccine type
 
-![png](selfcheck_files/selfcheck_15_1.png)
+![png](selfcheck_files/selfcheck_vac_type.png)
 
 | Value | Description |
 |-------|-----|
@@ -154,9 +154,11 @@ Age groups are represented by numbers. For example, 20 means ages 20-29. The exc
 
 1\. Self-check date
 
-![png](selfcheck_files/selfcheck_19_0.png)
+![png](selfcheck_files/selfcheck_check_date.png)
 
 2\. Fever status
+
+![png](selfcheck_files/selfcheck_fever.png)
 
 | Value | Description |
 |-------|-----|
@@ -165,7 +167,7 @@ Age groups are represented by numbers. For example, 20 means ages 20-29. The exc
 
 3\. Body Temperature
 
-![png](selfcheck_files/selfcheck_22_1.png)
+![png](selfcheck_files/selfcheck_fever_temp.png)
 
 \* Distribution of values excluding 0 (unanswered)
 
@@ -186,7 +188,7 @@ Age groups are represented by numbers. For example, 20 means ages 20-29. The exc
 | 3D | 3 day |
 | 4D | 4 day |
 
-![png](selfcheck_files/selfcheck_23_1.png)
+![png](selfcheck_files/selfcheck_fever_period.png)
 
 5\. Types of symptoms
 
@@ -220,7 +222,7 @@ Separated by **\`** for multiple selections.
 
 6\. Whether visited outbreak area
 
-![png](selfcheck_files/selfcheck_24_0.png)
+![png](selfcheck_files/selfcheck_group_infection_area.png)
 
 | Value | Description |
 |-------|-----|

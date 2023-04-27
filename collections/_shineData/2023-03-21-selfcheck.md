@@ -82,7 +82,7 @@ toc_sticky: false  # 목차가 페이지를 따라다니게 함 true|false
 
 1\. 성별
 
-![png](selfcheck_files/selfcheck_11_0.png)
+![png](selfcheck_files/selfcheck_gender.png)
 
 | 값 | 설명 |
 |-------|-----|
@@ -91,7 +91,7 @@ toc_sticky: false  # 목차가 페이지를 따라다니게 함 true|false
 
 2\. 연령대
 
-![png](selfcheck_files/selfcheck_12_0.png)
+![png](selfcheck_files/selfcheck_age.png)
 
 연령대는 숫자로만 표시되어 있습니다. 예를 들어, 20은 20~29세를 의미합니다.
 예외적으로 10은 14~19세이며, 70은 70세 이상의 모든 연령을 나타냅니다.
@@ -101,7 +101,7 @@ toc_sticky: false  # 목차가 페이지를 따라다니게 함 true|false
 
 1\. 기저질환
 
-![png](selfcheck_files/selfcheck_13_0.png)
+![png](selfcheck_files/selfcheck_underlying_disease.png)
 
 | 값 | 설명 |
 |-------|-----|
@@ -112,7 +112,7 @@ toc_sticky: false  # 목차가 페이지를 따라다니게 함 true|false
 
 2\. 흡엽여부
 
-![png](selfcheck_files/selfcheck_20_0.png)
+![png](selfcheck_files/selfcheck_smoking.png)
 
 | 값 | 설명 |
 |-------|-----|
@@ -125,7 +125,7 @@ toc_sticky: false  # 목차가 페이지를 따라다니게 함 true|false
 
 1\. PCR 검사결과
 
-![png](selfcheck_files/selfcheck_17_0.png)
+![png](selfcheck_files/selfcheck_pcr_result.png)
 
 | 값 | 설명 |
 |-------|-----|
@@ -134,22 +134,22 @@ toc_sticky: false  # 목차가 페이지를 따라다니게 함 true|false
 
 2\. 일별 검사결과
 
-![png](selfcheck_files/selfcheck_18_1.png)
+![png](selfcheck_files/selfcheck_pcr_date.png)
 
 
 ### 백신접종 정보
 
 1\. 백신 접종일 분포
 
-![png](selfcheck_files/selfcheck_16_1.png)
+![png](selfcheck_files/selfcheck_dose_date.png)
 
 2\. 백신 차수
 
-![png](selfcheck_files/selfcheck_14_1.png)
+![png](selfcheck_files/selfcheck_dose_num.png)
 
 3\. 백신종류
 
-![png](selfcheck_files/selfcheck_15_1.png)
+![png](selfcheck_files/selfcheck_vac_type.png)
 
 | 값 | 설명 |
 |-------|-----|
@@ -164,9 +164,11 @@ toc_sticky: false  # 목차가 페이지를 따라다니게 함 true|false
 
 1\. 셀프체크 증상 입력일
 
-![png](selfcheck_files/selfcheck_19_0.png)
+![png](selfcheck_files/selfcheck_check_date.png)
 
 2\. 발열 여부
+
+![png](selfcheck_files/selfcheck_fever.png)
 
 | 값 | 설명 |
 |-------|-----|
@@ -175,12 +177,12 @@ toc_sticky: false  # 목차가 페이지를 따라다니게 함 true|false
 
 3\. 발열 온도
 
+![png](selfcheck_files/selfcheck_fever_temp.png)
+
 | 값 | 설명 |
 |-------|-----|
 | 0 | 미입력 |
 | 수치값 | 입력 체온 |
-
-![png](selfcheck_files/selfcheck_22_1.png)
 
 \* 0(미입력)을 제외한 값의 분포
 \* 발열 온도는 이용자가 수기로 입력한 수치임
@@ -195,7 +197,7 @@ toc_sticky: false  # 목차가 페이지를 따라다니게 함 true|false
 | 3D | 발열 3일 지속 |
 | 4D | 발열 4일 지속 |
 
-![png](selfcheck_files/selfcheck_23_1.png)
+![png](selfcheck_files/selfcheck_fever_period.png)
 
 5\. 발생한 증상 종류
 
@@ -229,7 +231,7 @@ toc_sticky: false  # 목차가 페이지를 따라다니게 함 true|false
 
 6\. 집단감염 발생지역 방문 여부
 
-![png](selfcheck_files/selfcheck_24_0.png)
+![png](selfcheck_files/selfcheck_group_infection_area.png)
 
 | 값 | 설명 |
 |-------|-----|
