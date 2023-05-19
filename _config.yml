@@ -21,11 +21,7 @@
 title: SHINE
 email: shineforall@kt.com
 description: >- # this means to ignore newlines until "baseurl:"
-<<<<<<< HEAD
-  신종 감염병 대응을 위한 보건 정보 연구 SHINE을 소개 합니다.
-=======
   신종 감염병 대응을 위한 보건 정보 연구인 SHINE을 소개 합니다.
->>>>>>> 717c6302d93d28d8bb8adf8006d8bfa0dd0b621b
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.shineforall.org" # the base hostname & protocol for your site, e.g. http://example.com
 logo : "/assets/images/logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
