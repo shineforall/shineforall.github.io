@@ -2,7 +2,7 @@
 title:  Sociodemographic Factors Influencing Vulnerability to COVID-19 Infection in Korea
 
 header:
-  teaser: /assets/images/selfcheck_title.png # 리스트 페이지 썸네일 이미지 주소
+  teaser: /assets/images/sociological_title.png # 리스트 페이지 썸네일 이미지 주소
 
 ##### 목차 설정 #####
 toc: false # 페이지내 목차를 사용할지 안할지 설정 true|false
