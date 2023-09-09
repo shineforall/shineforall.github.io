@@ -73,7 +73,7 @@ $desktop: 1024px;
 }
 
 /*
-   em function
+  em function
    ========================================================================== */
 
 @function em($target, $context: $doc-font-size) {
@@ -655,7 +655,7 @@ body[class$="_eng"] {
   }
   .layout--single, .layout--single_eng {
     #main {
-      padding:1em;
+      padding:1em 1em 1em 2em;
     }
   }
   .mainListSubContainer {
