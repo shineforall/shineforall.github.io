@@ -12,6 +12,7 @@ toc_sticky: false  # 목차가 페이지를 따라다니게 함 true|false
 ##### 목차 설정 #####
 ---
 
+# Sociodemographic Factors Influencing Vulnerability to COVID-19 Infection in Korea
 
 For the past three years, we've been trying hard to avoid getting COVID-19. We've tried to figure out who's at risk and where, and we've covered our faces with masks and sanitized our hands when we meet someone outside of our homes. Then one day, various people around us got COVID-19 and didn't show up for a week. I also endured for a long time, but I was infected at an unexpected moment, and I thought, "It's about time to get caught."
 
@@ -33,7 +34,7 @@ We pseudonymized the SHINE data and collaborated with Korean government agencies
 
 The sociodemographic factors that are highly correlated with the risk of COVID-19 infection are in order of occupational group, age, income, and credit score**. _Figure 1_ shows the difference in COVID-19 infection rates by occupational group.
 
-> ****Methodology for calculating the impact of each characteristic on COVID-19 infection**:
+> ***Methodology for calculating the impact of each characteristic on COVID-19 infection**:
 > - Created a decision tree model for predicting COVID-19 infection using sociodemographic characteristics that showed statistically significant differences in COVID-19 infection rates as independent variables
 > - Calculated the relative influence (feature importance) of each variable in the generated decision tree model on predicting COVID-19 infection
 
@@ -82,7 +83,7 @@ The graph above in _Figure 4_ shows the number of confirmed cases by age group o
 
 Additionally, at the end of each wave of the pandemic, the proportion of young people increases and that of older people decreases in the total number of confirmed cases. This is because as the COVID-19 pandemic subsides, the spread pattern shifts from a nationwide epidemic to a local epidemic, similar to the early stages of the outbreak.
 
-> *****The third dose vaccination rates by age group announced by the KDCA on January 24, 2022 were as follows**: 8% for 10s, 32.9% for 20s, 36.0% for 30s, 41.2% for 40s, 64.3% for 50s, and over 80% for aged 60 and above.
+> ***The third dose vaccination rates by age group announced by the KDCA on January 24, 2022 were as follows**: 8% for 10s, 32.9% for 20s, 36.0% for 30s, 41.2% for 40s, 64.3% for 50s, and over 80% for aged 60 and above.
 
 
 ### Are economically vulnerable groups at higher risk of infection?
@@ -126,6 +127,7 @@ Based on the analysis of income by company size, it can be inferred that individ
 | :---------- | :-----------------: | :------------------: |
 | 1    Male   | 59,020             | 47,243              |
 | 2    Female | 40,982             | 31,907              |
+
 <figcaption><em>Monetary unit: KRW</em></figcaption>
 <figcaption>Wage distribution by business characteristics data from the Ministry of Employment and Labor (Jun. 2022)</figcaption>
 
