@@ -12,7 +12,6 @@ toc_sticky: false  # 목차가 페이지를 따라다니게 함 true|false
 ##### 목차 설정 #####
 ---
 
-# Sociodemographic Factors Influencing Vulnerability to COVID-19 Infection in Korea
 
 For the past three years, we've been trying hard to avoid getting COVID-19. We've tried to figure out who's at risk and where, and we've covered our faces with masks and sanitized our hands when we meet someone outside of our homes. Then one day, various people around us got COVID-19 and didn't show up for a week. I also endured for a long time, but I was infected at an unexpected moment, and I thought, "It's about time to get caught."
 
@@ -57,8 +56,8 @@ Looking at the status of the COVID-19 infection rate by gender and age, as annou
 
 <figure>
   <img src="sociological_files/fig2.png" alt="COVID-19 Infection rates by Gender, Age group in Korea">
-  <figcaption><em>1) Korea census (2020)</em></figcaption>
-  <figcaption><em>2) Korea CDC (26, Jan. 2023) (https://ncov.kdca.go.kr)</em></figcaption>
+  <figcaption><em>1) Korea census (2020)</em></figcaption> 
+  <figcaption><em>2) Korea CDC (26, Jan. 2023) (https://ncov.kdca.go.kr)</em></figcaption> 
   <figcaption>Figure 2. COVID-19 Infection rates by Gender, Age group in Korea</figcaption>
 </figure>
 
