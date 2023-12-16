@@ -12,13 +12,13 @@ toc_sticky: false  # 목차가 페이지를 따라다니게 함 true|false
 ##### 목차 설정 #####
 ---
 
-### _All data is based on voluntary records from SHINE app users and does not guarantee accuracy; responsibility for the use of this data lies with the user._
-
 
 #### Features
 
 * This is the self-check data for COVID-19 collected from the SHINE mobile app. It includes information entered by SHINE app users during self-checks, as well as COVID-19 PCR test results and records of COVID-19 vaccination. This is the data that has been anonymized from the collected data.
 * There was no limit to the number of times you can use self-check and PCR test results records in the mobile app. Therefore, each user may have multiple self-check data sets, and the data published includes the input data from the self-check date closest to the PCR test date within 7 days before and after the PCR test.
+
+### _All data is based on voluntary records from SHINE app users and does not guarantee accuracy; responsibility for the use of this data lies with the user._
 
 
 #### Information for variables

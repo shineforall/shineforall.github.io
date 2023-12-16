@@ -13,8 +13,8 @@ toc_sticky: false  # 목차가 페이지를 따라다니게 함 true|false
 ---
 
 
+질병관리본부의 정례브리핑 보도자료를 기반으로 수집/생선한 코로나19 집단감염 데이터로, 중앙대학교 김학래 교수님 연구실과 작업하였습니다.
+
 ### _모든 데이터는 정확성을 담보하지 않으며, 데이터 활용에 의한 책임은 이용자에게 있습니다._
 
-* 질병관리본부의 정례브리핑 보도자료를 기반으로 수집/생선한 코로나19 집단감염 데이터로, 중앙대학교 김학래 교수님 연구실과 작업하였습니다.
-
-![파일 다운로드](https://github.com/shineforall/data-covid19-group-infection)
+[파일 다운로드](https://github.com/shineforall/data-covid19-group-infection)
